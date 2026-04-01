@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:#e2e8f0;
+      line-height:1.6;
+    }
+
+    header{
+      padding:60px 20px;
+      text-align:center;
+      background:linear-gradient(135deg,#1e293b,#0f172a);
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    header p{
+      color:#94a3b8;
+    }
+
+    nav{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      padding:15px;
+      background:#111827;
+      position:sticky;
+      top:0;
+    }
+
+    nav a{
+      color:#e2e8f0;
+      text-decoration:none;
+    }
+
+    section{
+      padding:60px 20px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .card{
+      background:#1e293b;
+      padding:20px;
+      border-radius:12px;
+      margin-bottom:20px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .badge{
+      display:inline-block;
+      padding:5px 10px;
+      background:#38bdf8;
+      color:#000;
+      border-radius:6px;
+      font-size:12px;
+      margin-top:10px;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      background:#111827;
+      color:#94a3b8;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:10px;
+      padding:8px 12px;
+      background:#38bdf8;
+      color:#000;
+      text-decoration:none;
+      border-radius:6px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Simona Iuliana Hoater</h1>
+  <p>Voici quelques projets réalisés au cours de ma formation en administration système Windows et Linux.</p>
+</header>
+
+<nav>
+  <a href="#about">À propos</a>
+  <a href="#skills">Compétences</a>
+  <a href="#projects">Projets</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>À propos de moi</h2>
+  <div class="card">
+    Étudiante en informatique et passionné par les technologies web et systèmes, je me forme actuellement à l’administration système Windows et Linux. J’aime apprendre en pratiquant et développer des projets concrets pour améliorer mes compétences. 
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Compétences</h2>
+  <div class="card">
+    <span class="badge">HTML</span>
+    <span class="badge">CSS</span>
+    <span class="badge">JavaScript</span>
+    <span class="badge">PHP</span>
+    <span class="badge">Responsive Design</span>
+    <span class="badge">GitHub</span>
+    <span class="badge">jQuery</span>
+    <span class="badge">SQL</span>
+    <span class="badge">Linux</span>
+    <span class="badge">Windows</span>
+    <span class="badge">Administration système</span>
+    <span class="badge">Réseau</span>
+    <span class="badge">Sécurité</span>
+    <span class="badge">Virtualisation</span>
+    <span class="badge">Cloud</span>
+    <span class="badge">DevOps</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projets</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>DHCP/DNS Windows Server 2019</h3>
+      <p>Mise en œuvre et configuration des services réseau DHCP et DNS sur Windows Server 2019. Ce projet permet l’automatisation de l’attribution des adresses IP via DHCP ainsi que la gestion et la résolution des noms de domaine via DNS dans un environnement réseau local.</p>
+      <span class="badge">DHCP/DNS</span>
+      <a class="btn" href="#">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>Projet 2</h3>
+      <p>Projet avec JavaScript ou fonctionnalités interactives.</p>
+      <span class="badge">JS</span>
+      <a class="btn" href="#">Démo en direct</a>
+    </div>
+
+    <div class="card">
+      <h3>Projet 3</h3>
+      <p>Projet futur que vous ajouterez au fur et à mesure de votre apprentissage.</p>
+      <span class="badge">En cours</span>
+      <a class="btn" href="#">GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    Email : exemple@email.com <br/>
+    GitHub : https://github.com/username <br/>
+    LinkedIn : (optionnel)
+  </div>
+</section>
+
+<footer>
+  © 2026 - Mon Portfolio | Créé avec HTML, CSS et JavaScript
+</footer>
+
+</body>
+</html>
